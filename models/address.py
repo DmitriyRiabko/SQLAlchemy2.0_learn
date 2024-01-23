@@ -4,7 +4,7 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import  ForeignKey
 
 
-from base import Base
+from .base import Base
 
 
 if TYPE_CHECKING:
