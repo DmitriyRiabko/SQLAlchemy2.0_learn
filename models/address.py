@@ -1,10 +1,15 @@
 
+from typing import TYPE_CHECKING
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import  ForeignKey
 
 
 from base import Base
-from user import User
+
+
+if TYPE_CHECKING:
+  from user import User
+
 
     
 class Address(Base):
